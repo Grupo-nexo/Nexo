@@ -1,0 +1,46 @@
+.title {
+  color: #f7b801;
+  margin-top: 10px;
+}
+
+input.recovery-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button.recovery-button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #f7b801;
+  border: none;
+  border-radius: 6px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.small-link {
+  font-size: 14px;
+  display: block;
+  margin-top: 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+.highlight {
+  color: #f7b801;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 60px;
+  padding-bottom: 30px;
+}
