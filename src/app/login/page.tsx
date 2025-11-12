@@ -11,7 +11,6 @@ const poppins = Poppins({
 
 export default function LoginPage() {
   return (
-    // Fundo cinza //
     <div
       className={poppins.className}
       style={{
@@ -24,7 +23,7 @@ export default function LoginPage() {
       }}
     >
 
-      {/* Bloco branco central */}
+      {/* Retângulo branco principal */}
       <div
         style={{
           backgroundColor: "#fff",
@@ -34,251 +33,252 @@ export default function LoginPage() {
           width: "1800px",
           minHeight: "900px",
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "flex-start",
+          flexDirection: "row",    
           textAlign: "center",
           position: "relative",
+          gap: "60px",
         }}
       >
 
-        {/* Ícones do topo esquerdo */}
-        <div
-          style={{
-            position: "absolute",
-            top: "25px",
-            left: "30px",
-            display: "flex",
-            alignItems: "center",
-            gap: "24px",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-            <Home size={20} color="#000" />
-            <span style={{ fontWeight: 700, color: "#000" }}>Home</span>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-            <User size={20} color="#000" />
-            <span style={{ fontWeight: 700, color: "#000" }}>Profile</span>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-            <FileText size={20} color="#000" />
-            <span style={{ fontWeight: 700, color: "#000" }}>About</span>
-          </div>
-        </div>
+        {/*  MENU lateral*/}
+<div
+  style={{
+    position: "absolute",
+    top: "40px",
+    left: "40px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+    gap: "35px",
+  }}
+>
+  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+    <Home size={22} color="#000" />
+    <span style={{ fontWeight: 700, color: "#000" }}>Home</span>
+  </div>
 
-        {/* Logo e cabeçalho */}
-        <div
-          style={{
-            marginTop: "100px",
-            marginBottom: "20px",
-            textAlign: "center",
-          }}
-        >
-          <img
-            src="/logo.png.png"
-            alt="Logo NEXO"
-            style={{
-              width: "255px",
-              height: "auto",
-              marginBottom: "10px",
-            }}
-          />
-          <h2
-            style={{
-              fontSize: "28px",
-              color: "#000",
-              fontWeight: "700",
-            }}
-          >
-            Bem-vindo de volta!
-          </h2>
-          <p
-            style={{
-              color: "#000",
-              fontWeight: "600",
-              fontSize: "16px",
-            }}
-          >
-            Faça o login para continuar.
-          </p>
-        </div>
+  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+    <User size={22} color="#000" />
+    <span style={{ fontWeight: 700, color: "#000" }}>Perfil</span>
+  </div>
 
-        {/* Campos de entrada */}
+  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+    <FileText size={22} color="#000" />
+    <span style={{ fontWeight: 700, color: "#000" }}>Sobre Nós</span>
+  </div>
+</div>
+
+        {/*  Área do LOGIN*/}
         <div
           style={{
+            flex: 1,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            marginBottom: "15px",
-            width: "100%",
-            maxWidth: "400px",
-            gap: "12px",
           }}
         >
-
-          {/* Campo de e-mail */}
-          <div style={{ position: "relative", width: "100%" }}>
-            <AtSign
-              size={18}
-              color="#666"
+          <div
+            style={{
+              marginTop: "60px",
+              marginBottom: "20px",
+              textAlign: "center",
+            }}
+          >
+            <img
+              src="/logo.png.png"
+              alt="Logo NEXO"
               style={{
-                position: "absolute",
-                left: "10px",
-                top: "50%",
-                transform: "translateY(-50%)",
+                width: "255px",
+                height: "auto",
+                marginBottom: "10px",
               }}
             />
-            <input
-              type="text"
-              placeholder="Digite seu e-mail ou usuário"
+            <h2
               style={{
-                width: "100%",
-                padding: "18px 14px 18px 44px",
-                border: "2px solid #a8a8a8ff",
-                borderRadius: "6px",
-                backgroundColor: "#f9f9f9",
+                fontSize: "28px",
+                color: "#000",
+                fontWeight: "700",
+              }}
+            >
+              Bem-vindo de volta!
+            </h2>
+            <p
+              style={{
                 color: "#000",
                 fontWeight: "600",
-                outline: "none",
-                fontFamily: "'Poppins', sans-serif",
+                fontSize: "16px",
               }}
-            />
+            >
+              Faça o login para continuar.
+            </p>
           </div>
 
-          {/* Campo de senha */}
-          <div style={{ position: "relative", width: "100%" }}>
-            <Lock
-              size={18}
-              color="#666"
-              style={{
-                position: "absolute",
-                left: "10px",
-                top: "50%",
-                transform: "translateY(-50%)",
-              }}
-            />
-            <input
-              type="password"
-              placeholder="Digite sua senha"
-              style={{
-                width: "100%",
-                padding: "18px 14px 18px 44px",
-                border: "2px solid #a8a8a8ff",
-                borderRadius: "6px",
-                backgroundColor: "#f9f9f9",
-                color: "#000",
-                fontWeight: "600",
-                outline: "none",
-                fontFamily: "'Poppins', sans-serif",
-              }}
-            />
-          </div>
-
-          {/* Links abaixo dos campos */}
+          {/* Inputs */}
           <div
             style={{
               display: "flex",
-              justifyContent: "space-between",
+              flexDirection: "column",
+              alignItems: "center",
+              marginBottom: "15px",
               width: "100%",
-              fontSize: "13px",
-              marginTop: "5px",
-              marginBottom: "25px",
+              maxWidth: "400px",
+              gap: "12px",
             }}
           >
-            <a
-              href="#"
+            <div style={{ position: "relative", width: "100%" }}>
+              <AtSign
+                size={18}
+                color="#666"
+                style={{
+                  position: "absolute",
+                  left: "10px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                }}
+              />
+              <input
+                type="text"
+                placeholder="Digite seu e-mail ou usuário"
+                style={{
+                  width: "100%",
+                  padding: "18px 14px 18px 44px",
+                  border: "2px solid #a8a8a8ff",
+                  borderRadius: "6px",
+                  backgroundColor: "#f9f9f9",
+                  color: "#000",
+                  fontWeight: "600",
+                  outline: "none",
+                }}
+              />
+            </div>
+
+            <div style={{ position: "relative", width: "100%" }}>
+              <Lock
+                size={18}
+                color="#666"
+                style={{
+                  position: "absolute",
+                  left: "10px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                }}
+              />
+              <input
+                type="password"
+                placeholder="Digite sua senha"
+                style={{
+                  width: "100%",
+                  padding: "18px 14px 18px 44px",
+                  border: "2px solid #a8a8a8ff",
+                  borderRadius: "6px",
+                  backgroundColor: "#f9f9f9",
+                  color: "#000",
+                  fontWeight: "600",
+                  outline: "none",
+                }}
+              />
+            </div>
+
+            <div
               style={{
-                color: "#000",
-                fontWeight: "600",
-                textDecoration: "underline",
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%",
+                fontSize: "13px",
+                marginTop: "5px",
+                marginBottom: "25px",
               }}
             >
-              Esqueci minha senha
-            </a>
-            <a
-              href="#"
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                textDecoration: "underline",
-              }}
-            >
-              Lembre-me
-            </a>
+              <a
+                href="#"
+                style={{
+                  color: "#000",
+                  fontWeight: "600",
+                  textDecoration: "underline",
+                }}
+              >
+                Esqueci minha senha
+              </a>
+              <a
+                href="#"
+                style={{
+                  color: "#000",
+                  fontWeight: "600",
+                  textDecoration: "underline",
+                }}
+              >
+                Lembre-me
+              </a>
+            </div>
           </div>
-        </div>
 
-        {/* Botão principal */}
-        <button
-          style={{
-            backgroundColor: "#facc15",
-            border: "none",
-            color: "#fff",
-            fontWeight: "700",
-            borderRadius: "15px",
-            width: "150px",
-            padding: "12px",
-            cursor: "pointer",
-            marginBottom: "20px",
-            fontFamily: "'Poppins', sans-serif",
-          }}
-        >
-          Acessar
-        </button>
-
-        {/* Link de cadastro */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginTop: "5px",
-            marginBottom: "10px",
-          }}
-        >
-          <span
+          <button
             style={{
-              fontSize: "14px",
-              fontWeight: "600",
-              color: "#000",
-            }}
-          >
-            Não tem uma conta?
-          </span>
-          <a
-            href="#"
-            style={{
-              textDecoration: "underline",
-              fontWeight: "600",
-              color: "#000",
-              marginTop: "2px",
-            }}
-          >
-            Cadastre-se aqui.
-          </a>
-        </div>
-
-        {/* Rodapé */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: "30px",
-            textAlign: "center",
-            width: "100%",
-          }}
-        >
-          <p
-            style={{
-              fontSize: "12px",
+              backgroundColor: "#facc15",
+              border: "none",
               color: "#000",
               fontWeight: "700",
+              borderRadius: "15px",
+              width: "150px",
+              padding: "12px",
+              cursor: "pointer",
+              marginBottom: "20px",
             }}
           >
-            © 2025 Nexo. Todos os direitos reservados.
-            <br />
-            Produtividade e organização em um só lugar.
-          </p>
+            Acessar
+          </button>
+
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              marginTop: "5px",
+              marginBottom: "10px",
+            }}
+          >
+            <span
+              style={{
+                fontSize: "14px",
+                fontWeight: "600",
+                color: "#000",
+              }}
+            >
+              Não tem uma conta?
+            </span>
+            <a
+              href="#"
+              style={{
+                textDecoration: "underline",
+                fontWeight: "600",
+                color: "#000",
+                marginTop: "2px",
+              }}
+            >
+              Cadastre-se aqui.
+            </a>
+          </div>
+
+          <div
+            style={{
+              position: "absolute",
+              bottom: "30px",
+              textAlign: "center",
+              width: "100%",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "12px",
+                color: "#000",
+                fontWeight: "700",
+              }}
+            >
+              ©️ 2025 Nexo. Todos os direitos reservados.
+              <br />
+              Produtividade e organização em um só lugar.
+            </p>
+          </div>
         </div>
       </div>
     </div>
