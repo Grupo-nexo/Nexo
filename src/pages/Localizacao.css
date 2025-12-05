@@ -1,0 +1,195 @@
+/* ====== Wrapper principal ====== */
+.localizacao-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f5fa;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  min-height: 100vh;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* ====== Top bar ====== */
+.top-bar-global {
+  display: flex;
+  justify-content: space-between; /* distribui logo, voltar e menu */
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+.icone-menu {
+  font-size: 28px;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icone-menu:hover {
+  color: #d4aa28;
+}
+
+.btn-voltar {
+  background-color: transparent;
+  border: none;
+  color: #2c3e50;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.btn-voltar:hover {
+  color: #d4aa28;
+}
+
+/* ====== Conteúdo principal ====== */
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  flex-grow: 1;
+}
+
+/* ====== Lado esquerdo ====== */
+.lado-esquerdo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.buscar-local {
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  transition: border 0.3s;
+}
+
+.buscar-local:focus {
+  border-color: #f2c94c;
+  outline: none;
+}
+
+.mapa {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+}
+
+.info-local h3 {
+  margin: 8px 0 4px;
+  color: #34495e;
+  font-weight: 600;
+}
+
+.info-local p {
+  margin: 0 0 12px;
+  color: #555;
+}
+
+/* ====== Lado direito ====== */
+.lado-direito {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.lado-direito h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+
+.painel-titulo {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ====== Botão visualizar ====== */
+.btn-visualizar {
+  background-color: #f2c94c;
+  color: #2c3e50;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto 16px;
+  width: fit-content;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-visualizar:hover {
+  background-color: #e5b93f;
+  transform: translateY(-2px);
+}
+
+.icone-localizacao {
+  font-size: 18px;
+}
+
+/* ====== Atualização ====== */
+.atualizacao {
+  font-size: 14px;
+  color: #7f8c8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto 8px;
+  width: fit-content;
+}
+
+/* ====== Rodapé ====== */
+.rodape {
+  margin-top: auto;
+  font-size: 14px;
+  color: #7f8c8d;
+  text-align: center;
+  padding-top: 24px;
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 900px) {
+  .conteudo {
+    flex-direction: column;
+  }
+
+  .lado-esquerdo,
+  .lado-direito {
+    width: 100%;
+  }
+
+  .painel-titulo {
+    font-size: 26px;
+  }
+
+  .btn-visualizar {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+  

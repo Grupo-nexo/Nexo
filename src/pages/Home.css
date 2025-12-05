@@ -1,0 +1,96 @@
+/* ====== Reset e fonte ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ====== Container principal ====== */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+/* ====== Navbar ====== */
+.home-nav {
+  width: 100%;
+  max-width: 900px;
+  background-color: #f2c94c;
+  padding: 14px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  transition: transform 0.2s ease;
+}
+
+.home-nav:hover {
+  transform: translateY(-2px); /* leve efeito ao passar o mouse */
+}
+
+.home-nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.home-nav a:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ====== Conteúdo principal ====== */
+.home-content {
+  margin-top: 60px;
+  text-align: center;
+  max-width: 700px;
+}
+
+.home-content h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #d4aa28;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 768px) {
+  .home-nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .home-content h1 {
+    font-size: 32px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+}
+
+  

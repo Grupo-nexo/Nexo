@@ -1,0 +1,83 @@
+/* ====== Reset e fonte ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #f2f5fa;
+    color: #333;
+  }
+  
+  /* ====== Container principal ====== */
+  .registro-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f2f5fa;
+    text-align: center;
+  }
+  
+  /* ====== Card central ====== */
+  .registro-card {
+    background-color: #ffffff;
+    padding: 48px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    max-width: 480px;
+    width: 100%;
+  }
+  
+  /* ====== Logo ====== */
+  .ponto-logo {
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 32px;
+  }
+  
+  /* ====== Título e mensagem ====== */
+  .registro-titulo {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 16px;
+  }
+  
+  .registro-mensagem {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 32px;
+  }
+  
+  /* ====== Botão de ação ====== */
+  .registro-botao {
+    background-color: #eec925;
+    color: #2c3e50;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .registro-botao:hover {
+    background-color: #d4b020;
+  }
+  
+  /* ====== Rodapé fixo ====== */
+  .registro-footer {
+    position: absolute; /* ou fixed */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #7f8c8d;
+    text-align: center;
+    padding: 12px 0;
+  }
